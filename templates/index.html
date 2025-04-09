@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Chatbox</title>
+</head>
+<body>
+    <h2>Chat with Bot</h2>
+    <form method="POST">
+        <input type="text" name="message" required>
+        <input type="submit" value="Send">
+    </form>
+    <ul>
+        {% for msg in chat_history %}
+            <li>{{ msg }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
